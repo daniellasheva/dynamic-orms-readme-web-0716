@@ -13,4 +13,5 @@ sql = <<-SQL
 SQL
 
 DB[:conn].execute(sql)
+# When we use the SELECT method, return results as a HASH with the column names as keys
 DB[:conn].results_as_hash = true
